@@ -1,4 +1,4 @@
-﻿# Windowing Report
+﻿# Windowing
 
 ## Objective
 Analyze spectral leakage and the effect of different window lengths on frequency-domain estimation.
