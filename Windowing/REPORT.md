@@ -2,8 +2,6 @@
 
 ## `Windowing.ipynb`
 
-Execution status: `Success`
-
 Result figures:
 
 Figure 1
