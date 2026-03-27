@@ -1,15 +1,10 @@
-﻿# Filtering Report
+﻿# Filtering
 
 ## Objective
 Design and evaluate ECG filtering steps to reduce unwanted components while preserving cardiac waveform morphology.
 
-## Method Summary
-The notebook loads the ECG record, inspects spectral content, applies filtering stages, and compares filtered outputs in time and frequency domains.
-
 ## Key Observation
 The figures illustrate progressive noise reduction and improved signal readability after filtering, with preserved physiological waveform structure.
-
-Execution status: `Success`
 
 ## Result Figures
 
