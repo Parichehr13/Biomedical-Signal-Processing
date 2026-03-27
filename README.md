@@ -2,38 +2,35 @@
 
 This repository contains coursework and experiments in biomedical signal processing and machine learning.
 
-The structure follows the assignment logic in `CODES2.pdf`, with dedicated tracks for:
-- `Classification/`
-- `Regression/`
-
 ## Repository Structure
 
 - `CODES2.pdf`
   Assignment/reference document.
 
-- `sampling_theorem_aliasing_demo.ipynb`
-  Sampling theorem and aliasing analysis.
+- `Sampling/`
+  - `Sampling.ipynb`
+  - `REPORT.md`
+  - `figures/`
 
-- `windowing_spectral_leakage_analysis.ipynb`
-  Windowing effects and spectral leakage analysis.
+- `Windowing/`
+  - `Windowing.ipynb`
+  - `REPORT.md`
+  - `figures/`
 
-- `ecg_filter_design_analysis.ipynb`
-  ECG filtering and frequency-domain inspection.
-
-- `ecgiddb_person02_rec1.csv`
-  ECG data used by the filtering notebook.
-
-- `REPORT.md`
-  Execution report with generated figures for DSP notebooks.
+- `Filtering/`
+  - `Filtering.ipynb`
+  - `ecgiddb_person02_rec1.csv`
+  - `REPORT.md`
+  - `figures/`
 
 - `Classification/`
-  Classification-focused model selection and validation notebooks.
+  Classification notebooks and `REPORT.md`.
 
 - `Regression/`
-  Regression-focused validation and model selection notebooks.
+  Regression notebooks and `REPORT.md`.
 
 - `figures/`
-  Auto-generated figure outputs grouped by notebook.
+  Auto-generated figures for classification/regression notebooks.
 
 ## Notebook Map
 
@@ -65,10 +62,10 @@ The structure follows the assignment logic in `CODES2.pdf`, with dedicated track
    jupyter notebook
    ```
 4. Run notebooks in sequence:
-   `sampling_theorem_aliasing_demo` -> `windowing_spectral_leakage_analysis` -> `ecg_filter_design_analysis` -> `Classification/` and `Regression/`.
+   `Sampling/Sampling.ipynb` -> `Windowing/Windowing.ipynb` -> `Filtering/Filtering.ipynb` -> `Classification/` -> `Regression/`.
 
 ## Reproducibility Notes
 
 - ML notebooks use fixed seeds where applicable.
-- Use relative data paths from repository root.
+- Use relative data paths from each notebook location.
 - Execute notebooks from a clean kernel for consistent outputs.
