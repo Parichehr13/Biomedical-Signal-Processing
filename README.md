@@ -7,48 +7,46 @@ This repository contains coursework and experiments in biomedical signal process
 - `CODES2.pdf`
   Assignment/reference document.
 
-- `Sampling/`
-  - `Sampling.ipynb`
-  - `REPORT.md`
-  - `figures/`
+- `DSP/`
+  - `Sampling/Sampling.ipynb`
+  - `Sampling/REPORT.md`
+  - `Sampling/figures/`
+  - `Windowing/Windowing.ipynb`
+  - `Windowing/REPORT.md`
+  - `Windowing/figures/`
+  - `Filtering/Filtering.ipynb`
+  - `Filtering/ecgiddb_person02_rec1.csv`
+  - `Filtering/REPORT.md`
+  - `Filtering/figures/`
 
-- `Windowing/`
-  - `Windowing.ipynb`
-  - `REPORT.md`
-  - `figures/`
-
-- `Filtering/`
-  - `Filtering.ipynb`
-  - `ecgiddb_person02_rec1.csv`
-  - `REPORT.md`
-  - `figures/`
-
-- `Classification/`
-  Classification notebooks and `REPORT.md`.
-
-- `Regression/`
-  Regression notebooks and `REPORT.md`.
-
-- `figures/`
-  Auto-generated figures for classification/regression notebooks.
+- `ML/`
+  - `Classification/` notebooks and `REPORT.md`
+  - `Regression/` notebooks and `REPORT.md`
+  - `figures/` generated figures for ML notebooks
 
 ## Notebook Map
 
-### Classification
+### DSP
 
-- `Classification/classification_cross_validation_comparison.ipynb`
-- `Classification/classification_fixed_vs_nested_cv.ipynb`
-- `Classification/classification_logistic_auc_evaluation.ipynb`
-- `Classification/classification_nested_cross_validation_pipeline.ipynb`
-- `Classification/REPORT.md`
+- `DSP/Sampling/Sampling.ipynb`
+- `DSP/Windowing/Windowing.ipynb`
+- `DSP/Filtering/Filtering.ipynb`
 
-### Regression
+### ML Classification
 
-- `Regression/regression_holdout_validation.ipynb`
-- `Regression/regression_repeated_kfold_cv.ipynb`
-- `Regression/regression_nested_holdout_model_selection.ipynb`
-- `Regression/regression_nested_cross_validation_polynomial.ipynb`
-- `Regression/REPORT.md`
+- `ML/Classification/classification_cross_validation_comparison.ipynb`
+- `ML/Classification/classification_fixed_vs_nested_cv.ipynb`
+- `ML/Classification/classification_logistic_auc_evaluation.ipynb`
+- `ML/Classification/classification_nested_cross_validation_pipeline.ipynb`
+- `ML/Classification/REPORT.md`
+
+### ML Regression
+
+- `ML/Regression/regression_holdout_validation.ipynb`
+- `ML/Regression/regression_repeated_kfold_cv.ipynb`
+- `ML/Regression/regression_nested_holdout_model_selection.ipynb`
+- `ML/Regression/regression_nested_cross_validation_polynomial.ipynb`
+- `ML/Regression/REPORT.md`
 
 ## Quick Start
 
@@ -61,8 +59,8 @@ This repository contains coursework and experiments in biomedical signal process
    ```bash
    jupyter notebook
    ```
-4. Run notebooks in sequence:
-   `Sampling/Sampling.ipynb` -> `Windowing/Windowing.ipynb` -> `Filtering/Filtering.ipynb` -> `Classification/` -> `Regression/`.
+4. Suggested execution order:
+   `DSP/Sampling` -> `DSP/Windowing` -> `DSP/Filtering` -> `ML/Classification` -> `ML/Regression`.
 
 ## Reproducibility Notes
 
