@@ -3,13 +3,8 @@
 ## Objective
 Analyze spectral leakage and the effect of different window lengths on frequency-domain estimation.
 
-## Method Summary
-The notebook generates windowed signals, computes spectral representations, and compares how windowing choices impact peak sharpness and leakage.
-
 ## Key Observation
 The figures show the expected trade-off between main-lobe width and side-lobe suppression as window parameters change.
-
-Execution status: `Success`
 
 ## Result Figures
 
