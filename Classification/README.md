@@ -1,26 +1,22 @@
-# Classification Track
+﻿# Classification Track
 
-This folder contains classification-focused notebooks derived from the `CODES2.pdf` assignment split.
+This folder contains classification-focused experiments for model evaluation and validation design.
 
 ## Notebooks
 
-- `CV.ipynb`
-  Cross-validation workflow for baseline model selection.
+- `classification_cross_validation_comparison.ipynb`
+  Baseline cross-validation comparison workflow.
 
-- `CV2.ipynb`
-  Extended cross-validation experiment.
+- `classification_fixed_vs_nested_cv.ipynb`
+  Fixed CV versus nested CV evaluation.
 
-- `CV3.ipynb`
-  Additional CV-based experiment/variant.
+- `classification_logistic_auc_evaluation.ipynb`
+  Logistic regression performance analysis with AUC-focused evaluation.
 
-- `Nested Cross-Validation.ipynb`
-  Nested CV workflow for less biased model/hyperparameter evaluation.
+- `classification_nested_cross_validation_pipeline.ipynb`
+  End-to-end nested cross-validation pipeline.
 
-## Recommended Reporting Format
+## Report
 
-For each notebook, document:
-- Objective
-- Dataset generation/loading
-- Model and hyperparameters
-- Validation strategy
-- Final metrics and conclusion
+- `REPORT.md`
+  Includes execution status and generated result figures for each notebook.

@@ -1,26 +1,22 @@
-# Regression Track
+﻿# Regression Track
 
-This folder contains regression-focused notebooks derived from the `CODES2.pdf` assignment split.
+This folder contains regression-focused experiments for holdout, cross-validation, and nested validation schemes.
 
 ## Notebooks
 
-- `Hold-Out.ipynb`
-  Single train/test split baseline.
+- `regression_holdout_validation.ipynb`
+  Single holdout split baseline.
 
-- `K-Fold CV.ipynb`
-  K-fold cross-validation workflow.
+- `regression_repeated_kfold_cv.ipynb`
+  Repeated K-fold CV error analysis.
 
-- `Nested Holdout.ipynb`
-  Holdout with inner selection logic.
+- `regression_nested_holdout_model_selection.ipynb`
+  Nested holdout design for model selection.
 
-- `Nested Cross-Validation.ipynb`
-  Nested CV for robust model/hyperparameter evaluation.
+- `regression_nested_cross_validation_polynomial.ipynb`
+  Nested cross-validation with polynomial model selection.
 
-## Recommended Reporting Format
+## Report
 
-For each notebook, document:
-- Objective
-- Dataset generation/loading
-- Model family and tuning range
-- Validation strategy
-- Final error metrics and conclusion
+- `REPORT.md`
+  Includes execution status and generated result figures for each notebook.
