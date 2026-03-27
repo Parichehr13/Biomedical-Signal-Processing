@@ -1,69 +1,71 @@
 ﻿# Biomedical Signal Processing
 
-This repository contains coursework and experiments in biomedical signal processing and machine learning.
+A compact, reproducible portfolio of biomedical signal processing and machine learning experiments.
 
-## Repository Structure
+This repository is organized as two complementary tracks:
+- `DSP`: signal-level analysis (sampling, windowing, ECG filtering)
+- `ML`: model-level analysis (classification and regression validation workflows)
 
-- `CODES2.pdf`
-  Assignment/reference document.
+## Project Overview
 
-- `DSP/`
-  - `Sampling/Sampling.ipynb`
-  - `Sampling/REPORT.md`
-  - `Sampling/figures/`
-  - `Windowing/Windowing.ipynb`
-  - `Windowing/REPORT.md`
-  - `Windowing/figures/`
-  - `Filtering/Filtering.ipynb`
-  - `Filtering/ecgiddb_person02_rec1.csv`
-  - `Filtering/REPORT.md`
-  - `Filtering/figures/`
+The goal is to move from core DSP concepts to practical ML evaluation, using notebooks plus figure-based reports for transparent results.
 
-- `ML/`
-  - `Classification/` notebooks and `REPORT.md`
-  - `Regression/` notebooks and `REPORT.md`
-  - `figures/` generated figures for ML notebooks
+What you can expect in this repo:
+- End-to-end notebook workflows
+- Saved output figures for each experiment
+- Report files summarizing outcomes per module
+- A clean structure for quick navigation and review
 
-## Notebook Map
+## Repository Map
 
-### DSP
+### `DSP/` (Digital Signal Processing)
+- `Sampling/`
+  - `Sampling.ipynb`
+  - `REPORT.md`
+  - `figures/`
+- `Windowing/`
+  - `Windowing.ipynb`
+  - `REPORT.md`
+  - `figures/`
+- `Filtering/`
+  - `Filtering.ipynb`
+  - `ecgiddb_person02_rec1.csv`
+  - `REPORT.md`
+  - `figures/`
 
-- `DSP/Sampling/Sampling.ipynb`
-- `DSP/Windowing/Windowing.ipynb`
-- `DSP/Filtering/Filtering.ipynb`
+### `ML/` (Machine Learning)
+- `Classification/`
+  - classification notebooks
+  - `REPORT.md`
+- `Regression/`
+  - regression notebooks
+  - `REPORT.md`
+- `figures/`
+  - generated figures for ML notebooks
 
-### ML Classification
+### Root files
+- `requirements.txt`: Python dependencies
+- `CODES2.pdf`: assignment/reference document
 
-- `ML/Classification/classification_cross_validation_comparison.ipynb`
-- `ML/Classification/classification_fixed_vs_nested_cv.ipynb`
-- `ML/Classification/classification_logistic_auc_evaluation.ipynb`
-- `ML/Classification/classification_nested_cross_validation_pipeline.ipynb`
-- `ML/Classification/REPORT.md`
+## Suggested Reading Order
 
-### ML Regression
+1. `DSP/Sampling`
+2. `DSP/Windowing`
+3. `DSP/Filtering`
+4. `ML/Classification`
+5. `ML/Regression`
 
-- `ML/Regression/regression_holdout_validation.ipynb`
-- `ML/Regression/regression_repeated_kfold_cv.ipynb`
-- `ML/Regression/regression_nested_holdout_model_selection.ipynb`
-- `ML/Regression/regression_nested_cross_validation_polynomial.ipynb`
-- `ML/Regression/REPORT.md`
+## Run Locally
 
-## Quick Start
+```bash
+pip install -r requirements.txt
+jupyter notebook
+```
 
-1. Create and activate a Python environment.
-2. Install dependencies:
-   ```bash
-   pip install -r requirements.txt
-   ```
-3. Launch Jupyter:
-   ```bash
-   jupyter notebook
-   ```
-4. Suggested execution order:
-   `DSP/Sampling` -> `DSP/Windowing` -> `DSP/Filtering` -> `ML/Classification` -> `ML/Regression`.
+Then open notebooks in the recommended order above.
 
-## Reproducibility Notes
+## Notes for Reproducibility
 
-- ML notebooks use fixed seeds where applicable.
-- Use relative data paths from each notebook location.
-- Execute notebooks from a clean kernel for consistent outputs.
+- Keep data paths relative to each notebook folder.
+- Run notebooks from a clean kernel.
+- ML experiments use fixed seeds where applicable.
