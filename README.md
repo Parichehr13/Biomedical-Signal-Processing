@@ -1,28 +1,72 @@
-# Biomedical Signal Processing (DSP + ML) 
+# Biomedical Signal Processing
 
-### Digital Signal Processing (DSP)
-- Sampling:
-  - CT → DT sampling, **Nyquist/Shannon**, aliasing checks
-  - Frequency mapping: **Ω (rad/s)** ↔ **ω (rad/sample)**, DTFT periodicity
-- Spectral analysis:
-  - **DTFT / DFT** basics, frequency resolution, zero-padding effects
-  - **Windowing** (rectangular / Hamming etc.), main-lobe vs side-lobes
-  - **Spectral leakage** and **transition band vs ripple trade-off**
-- Filtering:
-  - **FIR** filtering (convolution), linear phase (symmetric taps)
-  - **IIR** filtering (AR/MA/ARMA view), poles/zeros intuition
-  - Frequency response: magnitude/phase, group delay (phase distortion)
-  - Practical filtering pipelines on sampled signals
+This repository contains course work and experiments in biomedical signal processing and machine learning.
 
-### Supervised Learning (ML)
-- Regression (numeric target):
-  - MAE, MSE, RMSE; predicted vs actual plot
-- Classification (categorical target):
-  - Accuracy, ROC AUC; probability scoring / ROC-style evaluation
+The structure follows the assignment logic in `CODES2.pdf`: later exercises are split into two tracks:
+- `Classification/`
+- `Regression/`
 
-#### Validation schemes
-- Hold-out (train/test split)
-- K-Fold Cross-Validation
-- Repeated K-Fold (stability: mean ± std)
-- Nested Hold-out 
-- Nested Cross-Validation
+## Repository Structure
+
+- `CODES2.pdf`
+  Assignment/reference document used to define the workflow.
+
+- `Sampling.ipynb`
+  Introductory signal sampling exercise.
+
+- `Windowing.ipynb`
+  Spectral analysis/windowing exercise.
+
+- `Filtering.ipynb`
+  ECG filtering exercise.
+
+- `Classification/`
+  Classification-focused model selection and validation notebooks.
+
+- `Regression/`
+  Regression-focused validation and model selection notebooks.
+
+## Notebook Map
+
+### Classification
+
+- `Classification/CV.ipynb`
+- `Classification/CV2.ipynb`
+- `Classification/CV3.ipynb`
+- `Classification/Nested Cross-Validation.ipynb`
+
+### Regression
+
+- `Regression/Hold-Out.ipynb`
+- `Regression/K-Fold CV.ipynb`
+- `Regression/Nested Holdout.ipynb`
+- `Regression/Nested Cross-Validation.ipynb`
+
+## Quick Start
+
+1. Create and activate a Python environment.
+2. Install dependencies:
+   ```bash
+   pip install -r requirements.txt
+   ```
+3. Launch Jupyter:
+   ```bash
+   jupyter notebook
+   ```
+4. Open notebooks from top to bottom (Sampling -> Windowing -> Filtering -> Classification/Regression).
+
+## Reproducibility Notes
+
+- Most ML notebooks already use fixed seeds (`random_state=42` and/or `np.random.seed(42)`).
+- Keep dataset paths relative to the repository root.
+- Prefer running cells in order from a clean kernel.
+
+## Suggested Next Improvements
+
+- Add a short markdown section at the top of each notebook:
+  - Objective
+  - Dataset
+  - Method
+  - Metrics
+  - Conclusion
+- Add a final comparison table (best model and metric) in each track folder.
