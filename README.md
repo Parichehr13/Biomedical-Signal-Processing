@@ -1,11 +1,11 @@
 # Biomedical Signal Processing
 
-This repository contains a collection of biomedical signal processing and machine learning exercises organized around two main themes:
+This repository contains biomedical signal processing and machine learning exercises organized into two tracks:
 
 - `DSP`: core digital signal processing concepts applied to biomedical-style signals
 - `ML`: validation-focused machine learning workflows for classification and regression
 
-The project is structured as a set of Jupyter notebooks supported by short reports and exported figures.
+The project is implemented in Jupyter notebooks and supported by short reports and exported figures.
 
 ## Repository Structure
 
@@ -27,94 +27,64 @@ Biomedical-Signal-Processing/
 
 ### Digital Signal Processing
 
-#### 1. Sampling
+#### Sampling
 
-Study of continuous-to-discrete sampling and sinc-based reconstruction using a finite-duration signal. The notebook compares:
+Sampling and sinc-based reconstruction, including:
 
 - a Shannon-compliant sampling rate
-- an undersampled case that produces aliasing
-- time-domain and frequency-domain behavior under both regimes
+- an undersampled case with aliasing
+- time-domain and frequency-domain comparison
 
-Files:
+Notebook: `DSP/Sampling/Sampling.ipynb`
 
-- `DSP/Sampling/Sampling.ipynb`
-- `DSP/Sampling/REPORT.md`
+#### Windowing
 
-#### 2. Windowing
-
-Frequency-domain analysis of a two-tone signal using rectangular and Hamming windows with different segment lengths. The notebook highlights:
+Frequency-domain analysis of a two-tone signal using rectangular and Hamming windows, with focus on:
 
 - spectral leakage
-- frequency resolution trade-offs
-- the effect of window choice and window length on FFT interpretation
+- frequency-resolution trade-offs
+- the effect of window length on FFT analysis
 
-Files:
+Notebook: `DSP/Windowing/Windowing.ipynb`
 
-- `DSP/Windowing/Windowing.ipynb`
-- `DSP/Windowing/REPORT.md`
+#### ECG Filtering
 
-#### 3. ECG Filtering
-
-Filtering pipeline for a raw ECG signal with emphasis on preserving waveform morphology while suppressing noise. The workflow includes:
+An ECG filtering pipeline focused on noise reduction while preserving waveform morphology. It includes:
 
 - baseline wander removal
-- suppression of 50 Hz powerline interference and harmonics
+- suppression of 50 Hz interference and harmonics
 - comparison of band-stop and low-pass strategies
 - zero-phase filtering for morphology preservation
 
-Files:
-
-- `DSP/Filtering/Filtering.ipynb`
-- `DSP/Filtering/REPORT.md`
-- `DSP/Filtering/ecgiddb_person02_rec1.csv`
+Notebook: `DSP/Filtering/Filtering.ipynb`
 
 ### Machine Learning
 
-#### 1. Classification
+#### Classification
 
-Classification notebooks focused on evaluation methodology rather than only model accuracy. Topics include:
+Classification notebooks focused on validation methodology, including:
 
 - cross-validation strategy comparison
 - fixed validation versus nested cross-validation
 - ROC AUC evaluation for logistic models
 - nested cross-validation pipelines
 
-Files:
+Folder: `ML/Classification`
 
-- `ML/Classification/classification_cross_validation_comparison.ipynb`
-- `ML/Classification/classification_fixed_vs_nested_cv.ipynb`
-- `ML/Classification/classification_logistic_auc_evaluation.ipynb`
-- `ML/Classification/classification_nested_cross_validation_pipeline.ipynb`
-- `ML/Classification/REPORT.md`
+#### Regression
 
-#### 2. Regression
-
-Regression notebooks demonstrating common validation and model selection workflows, including:
+Regression notebooks covering model validation and selection, including:
 
 - holdout validation
 - repeated k-fold cross-validation
 - nested holdout model selection
 - nested cross-validation for polynomial regression
 
-Files:
-
-- `ML/Regression/regression_holdout_validation.ipynb`
-- `ML/Regression/regression_repeated_kfold_cv.ipynb`
-- `ML/Regression/regression_nested_holdout_model_selection.ipynb`
-- `ML/Regression/regression_nested_cross_validation_polynomial.ipynb`
-- `ML/Regression/REPORT.md`
+Folder: `ML/Regression`
 
 ## Requirements
 
-The project uses Python and Jupyter notebooks. Main dependencies are listed in `requirements.txt`, including:
-
-- `numpy`
-- `scipy`
-- `matplotlib`
-- `pandas`
-- `scikit-learn`
-- `jupyter`
-- `wfdb`
+The project uses Python and Jupyter notebooks. Core dependencies are listed in `requirements.txt`.
 
 ## Setup
 
@@ -136,7 +106,7 @@ pip install -r requirements.txt
 
 ## How to Run
 
-Launch Jupyter Notebook or JupyterLab from the repository root:
+Launch Jupyter from the repository root:
 
 ```bash
 jupyter notebook
@@ -144,21 +114,11 @@ jupyter notebook
 
 Then open any notebook from the `DSP` or `ML` folders.
 
-## Outputs
-
-This repository includes:
-
-- source notebooks for each exercise
-- short written reports summarizing objectives, methods, and conclusions
-- exported figures generated from notebook execution
-
-These outputs are useful for both study/reference purposes and reproducible experimentation.
-
 ## Notes
 
 - The ECG filtering example uses the included file `DSP/Filtering/ecgiddb_person02_rec1.csv`.
 - Figures referenced in the reports are already stored in the repository.
-- The machine learning section emphasizes evaluation design and validation rigor in addition to model results.
+- The machine learning section emphasizes validation rigor in addition to model results.
 
 ## License
 
