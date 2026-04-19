@@ -120,6 +120,3 @@ Then open any notebook from the `DSP` or `ML` folders.
 - Figures referenced in the reports are already stored in the repository.
 - The machine learning section emphasizes validation rigor in addition to model results.
 
-## License
-
-No license file is currently included in this repository. If you plan to share or reuse the work publicly, adding a license is recommended.
