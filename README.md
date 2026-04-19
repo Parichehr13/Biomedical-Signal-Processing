@@ -7,6 +7,17 @@ This repository contains biomedical signal processing and machine learning exerc
 
 The project is implemented in Jupyter notebooks and supported by short reports and exported figures.
 
+## Quick Start
+
+Install the dependencies and launch Jupyter from the repository root:
+
+```powershell
+python -m venv .venv
+.venv\Scripts\Activate.ps1
+pip install -r requirements.txt
+jupyter notebook
+```
+
 ## Repository Structure
 
 ```text
@@ -35,7 +46,7 @@ Sampling and sinc-based reconstruction, including:
 - an undersampled case with aliasing
 - time-domain and frequency-domain comparison
 
-Notebook: `DSP/Sampling/Sampling.ipynb`
+Notebook: [`DSP/Sampling/Sampling.ipynb`](DSP/Sampling/Sampling.ipynb)
 
 #### Windowing
 
@@ -45,7 +56,7 @@ Frequency-domain analysis of a two-tone signal using rectangular and Hamming win
 - frequency-resolution trade-offs
 - the effect of window length on FFT analysis
 
-Notebook: `DSP/Windowing/Windowing.ipynb`
+Notebook: [`DSP/Windowing/Windowing.ipynb`](DSP/Windowing/Windowing.ipynb)
 
 #### ECG Filtering
 
@@ -56,7 +67,7 @@ An ECG filtering pipeline focused on noise reduction while preserving waveform m
 - comparison of band-stop and low-pass strategies
 - zero-phase filtering for morphology preservation
 
-Notebook: `DSP/Filtering/Filtering.ipynb`
+Notebook: [`DSP/Filtering/Filtering.ipynb`](DSP/Filtering/Filtering.ipynb)
 
 ### Machine Learning
 
@@ -69,7 +80,7 @@ Classification notebooks focused on validation methodology, including:
 - ROC AUC evaluation for logistic models
 - nested cross-validation pipelines
 
-Folder: `ML/Classification`
+Folder: [`ML/Classification`](ML/Classification)
 
 #### Regression
 
@@ -80,7 +91,7 @@ Regression notebooks covering model validation and selection, including:
 - nested holdout model selection
 - nested cross-validation for polynomial regression
 
-Folder: `ML/Regression`
+Folder: [`ML/Regression`](ML/Regression)
 
 ## Requirements
 
